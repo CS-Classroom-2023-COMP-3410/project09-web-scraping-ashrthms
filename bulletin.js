@@ -8,21 +8,24 @@ axios.get('https://bulletin.du.edu/undergraduate/majorsminorscoursedescriptions/
     .then(response => {
         const $ = cheerio.load(response.data);
         const pageTitle = $('title').text();
-        // console.log('page Title:', pageTitle)
-        // console.log(csButton)
-        // csButton.attr('aria-expanded', 'true') = true
-        // const csButton = $('.toggle').children().get()
-        // const courseBlocks = $('sc_sccoursedescs').children().get()
-        // console.log($('courseblocktitle'))
-        // console.log(courseBlocks)
+
         formatted = {"courses": []}
         courseBlocks = $('.courseblock').filter((index,courseBlock) => {
+            const title = $(courseBlock).find('.courseblocktitle').text().replace(/\u00A0/g, ' ')
+            const desc = $(courseBlock).find('.courseblockdesc').text()
+            // console.log((title.includes('COMP 3')), !(desc.includes('Prerequisite:') || desc.includes('Prerequisites:')),title,desc.slice(-20,0))
+            return (title.includes('COMP 3')) && !(desc.includes('Prerequisite:') || desc.includes('Prerequisites:'));
+        })
+        // courseBlocks.each((index,cB) => {
+        //     console.log($(cB).find('.courseblocktitle').text())
+        // })
+        courseBlocks.each((index,courseBlock) => {
+            // console.log('courseBlock: ',courseBlock)
             const title = $(courseBlock).find('.courseblocktitle').text()
             const desc = $(courseBlock).find('.courseblockdesc').text()
-            console.log(formatted["courses"])
-            formatted["courses"].push({"course":title.slice(0,9),"title":title.slice(9,title.indexOf("(")-1)})
-            return (title.includes('COMP 3')) && !(desc.includes('Prerequisite: '));
+            formatted["courses"].push({"course":title.slice(0,9),"title":title.slice(10,title.indexOf("(")-2)})
         })
+
         fs.writeFileSync('results/bulletin.JSON', JSON.stringify(formatted));
 
     })
