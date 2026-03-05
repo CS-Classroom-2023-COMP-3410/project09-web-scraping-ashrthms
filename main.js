@@ -1,5 +1,7 @@
 const { default: axios } = require('axios');
-const cheerio = require('cheerio')
+const cheerio = require('cheerio');
+const { default: fsExtra } = require('fs-extra/esm');
+const fs = require('fs');
 
 
 axios.get('https://bulletin.du.edu/undergraduate/majorsminorscoursedescriptions/traditionalbachelorsprogrammajorandminors/computerscience/#coursedescriptionstext')
@@ -13,16 +15,15 @@ axios.get('https://bulletin.du.edu/undergraduate/majorsminorscoursedescriptions/
         // const courseBlocks = $('sc_sccoursedescs').children().get()
         // console.log($('courseblocktitle'))
         // console.log(courseBlocks)
-
-        const courseBlocks = $('.courseblock')
-        // console.log(courseBlocks)
-
-
-        courseBlocks.filter(function(element) {
-            return element.children('.courseblockdesc').text().contains
-            
+        formatted = {"courses": []}
+        courseBlocks = $('.courseblock').filter((index,courseBlock) => {
+            const title = $(courseBlock).find('.courseblocktitle').text()
+            const desc = $(courseBlock).find('.courseblockdesc').text()
+            console.log(formatted["courses"])
+            formatted["courses"].push({"course":title.slice(0,9),"title":title.slice(9,title.indexOf("(")-1)})
+            return (title.includes('COMP 3')) && !(desc.includes('Prerequisite: '));
         })
-        
+        fs.writeFileSync('results/bulletin.JSON', JSON.stringify(formatted));
 
     })
     .catch(error =>
