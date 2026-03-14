@@ -1,0 +1,269 @@
+{
+  "events": [
+    {
+      "title": "\n      DU DAD Club\n      ",
+      "date": "March 13",
+      "time": " 5:00pm - 11:00pm"
+    },
+    {
+      "title": "\n      Undergraduate recital: Trevor Briggs, jazz composition\n      ",
+      "date": "March 14",
+      "time": " 4:30pm - 6:30pm"
+    },
+    {
+      "title": "\n      Graduate recital: Puting Liu, voice\n      ",
+      "date": "March 14",
+      "time": " 7:30pm - 9:30pm"
+    },
+    {
+      "title": "\n      Undergraduate recital: Emil Tellefsen, composition\n      ",
+      "date": "March 14",
+      "time": " 7:30pm - 9:30pm"
+    },
+    {
+      "title": "\n      Student Carillon Concert\n      ",
+      "date": "March 15",
+      "time": " 3:00pm - 4:00pm"
+    },
+    {
+      "title": "\n      IM Soccer\n      ",
+      "date": "March 15",
+      "time": " 4:00pm - 11:00pm"
+    },
+    {
+      "title": "\n      Graduate recital: Timothy Coffey, clarinet\n      ",
+      "date": "March 15",
+      "time": " 7:30pm - 9:30pm"
+    },
+    {
+      "title": "\n      Deadline: Completion of Winter 2025 Incompletes\n      ",
+      "date": "March 16",
+      "time": " 12:00am - 11:59pm"
+    },
+    {
+      "title": "\n      Winter Quarter Last Day of Classes\n      ",
+      "date": "March 16",
+      "time": " 12:00am - 11:59pm"
+    },
+    {
+      "title": "\n      Varsity WBB Practice\n      ",
+      "date": "March 16",
+      "time": " 8:00am - 11:00am"
+    },
+    {
+      "title": "\n      New Hire Orientation\n      ",
+      "date": "March 16",
+      "time": " 8:30am - 3:00pm"
+    },
+    {
+      "title": "\n      Open Orchestra Rehearsal with David Kim\n      ",
+      "date": "March 16",
+      "time": " 2:15pm - 3:45pm"
+    },
+    {
+      "title": "\n      Biology Weekly Seminar\n      ",
+      "date": "March 16",
+      "time": " 4:00pm - 5:30pm"
+    },
+    {
+      "title": "\n      Masterclass: David Kim, violin\n      ",
+      "date": "March 16",
+      "time": " 4:00pm - 6:00pm"
+    },
+    {
+      "title": "\n      Native Student Alliance E-Board Meeting\n      ",
+      "date": "March 16",
+      "time": " 6:00pm - 8:00pm"
+    },
+    {
+      "title": "\n      Undergraduate recital: Kate Kaczmarek, violin\n      ",
+      "date": "March 16",
+      "time": " 7:30pm - 9:30pm"
+    },
+    {
+      "title": "\n      Winter Quarter Final Exams\n      ",
+      "date": "March 17",
+      "time": " 12:00am - 11:59pm"
+    },
+    {
+      "title": "\n      Masterclass: David Kim, violin\n      ",
+      "date": "March 17",
+      "time": " 10:00am - 12:00pm"
+    },
+    {
+      "title": "\n      HRE Departmental Meeting\n      ",
+      "date": "March 17",
+      "time": " 10:30am - 12:00pm"
+    },
+    {
+      "title": "\n      Women's Leadership Council Meeting\n      ",
+      "date": "March 17",
+      "time": " 11:00am - 2:00pm"
+    },
+    {
+      "title": "\n      CS Faculty Meetings\n      ",
+      "date": "March 17",
+      "time": " 12:00pm - 1:30pm"
+    },
+    {
+      "title": "\n      Letters of Love Meeting\n      ",
+      "date": "March 17",
+      "time": " 5:30pm - 7:00pm"
+    },
+    {
+      "title": "\n      Graduate recital: Bohan Hou, violin\n      ",
+      "date": "March 17",
+      "time": " 7:30pm - 9:30pm"
+    },
+    {
+      "title": "\n      MASA Meeting\n      ",
+      "date": "March 18",
+      "time": " 11:00am - 12:00pm"
+    },
+    {
+      "title": "\n      RSECS Executive and Leadership Meetings\n      ",
+      "date": "March 19",
+      "time": " 12:00pm - 1:00pm"
+    },
+    {
+      "title": "\n      DU DAD Club\n      ",
+      "date": "March 20",
+      "time": " 5:00pm - 11:00pm"
+    },
+    {
+      "title": "\n      Spring Interterm - Contact Academic Programs at 303-871-2804 or 303-871-2448 for Schedule and Registration\n      ",
+      "date": "March 21",
+      "time": " 12:00am - 11:59pm"
+    },
+    {
+      "title": "\n      MOMIX: Alice\n      ",
+      "date": "March 21",
+      "time": " 7:30pm - 9:30pm"
+    },
+    {
+      "title": "\n      MOMIX: Alice\n      ",
+      "date": "March 22",
+      "time": " 2:00pm - 4:00pm"
+    },
+    {
+      "title": "\n      Native Student Alliance E-Board Meeting\n      ",
+      "date": "March 23",
+      "time": " 6:00pm - 8:00pm"
+    },
+    {
+      "title": "\n      HRE Departmental Meeting\n      ",
+      "date": "March 24",
+      "time": " 10:30am - 12:00pm"
+    },
+    {
+      "title": "\n      CS Faculty Meetings\n      ",
+      "date": "March 24",
+      "time": " 12:00pm - 1:30pm"
+    },
+    {
+      "title": "\n      MASA Meeting\n      ",
+      "date": "March 25",
+      "time": " 11:00am - 12:00pm"
+    },
+    {
+      "title": "\n      Winter Quarter Grade Due from Faculty\n      ",
+      "date": "March 26",
+      "time": " 12:00am - 10:00pm"
+    },
+    {
+      "title": "\n      RSECS Executive and Leadership Meetings\n      ",
+      "date": "March 26",
+      "time": " 12:00pm - 1:00pm"
+    },
+    {
+      "title": "\n      Parking Spanish Guitar Night\n      ",
+      "date": "March 26",
+      "time": " 5:30pm - 9:30pm"
+    },
+    {
+      "title": "\n      Winter Quarter Grades Available Online\n      ",
+      "date": "March 27",
+      "time": " 12:00am - 11:59pm"
+    },
+    {
+      "title": "\n      Rocky Mountain Color Guard\n      ",
+      "date": "March 27",
+      "time": " 5:00am - 9:00pm"
+    },
+    {
+      "title": "\n      Adult Drop-In Hockey\n      ",
+      "date": "March 27",
+      "time": " 6:00am - 7:30am"
+    },
+    {
+      "title": "\n      MLAX vs. Georgetown\n      ",
+      "date": "March 28",
+      "time": " 1:00pm - 4:00pm"
+    },
+    {
+      "title": "\n      Spring Quarter Last Day to Register without Late Fee\n      ",
+      "date": "March 29",
+      "time": " 12:00am - 11:59pm"
+    },
+    {
+      "title": "\n      Spring Quarter $25 Late Registration Fee: First Time Registrants\n      ",
+      "date": "March 30",
+      "time": " 12:00am - 11:59pm"
+    },
+    {
+      "title": "\n      Spring Quarter Classes Begin\n      ",
+      "date": "March 30",
+      "time": " 12:00am - 11:59pm"
+    },
+    {
+      "title": "\n      School Days Off\n      ",
+      "date": "March 30",
+      "time": " 7:30am - 4:15pm"
+    },
+    {
+      "title": "\n      School Days Off\n      ",
+      "date": "March 30",
+      "time": " 9:00am - 3:00pm"
+    },
+    {
+      "title": "\n      School Days Off\n      ",
+      "date": "March 30",
+      "time": " 10:15am - 12:00pm"
+    },
+    {
+      "title": "\n      Native Student Alliance E-Board Meeting\n      ",
+      "date": "March 30",
+      "time": " 6:00pm - 8:00pm"
+    },
+    {
+      "title": "\n      Spring Quarter $50 Late Registration Fee: First Time Registrants\n      ",
+      "date": "March 31",
+      "time": " 12:00am - 11:59pm"
+    },
+    {
+      "title": "\n      School Days Off\n      ",
+      "date": "March 31",
+      "time": " 7:30am - 4:15pm"
+    },
+    {
+      "title": "\n      School Days Off\n      ",
+      "date": "March 31",
+      "time": " 9:00am - 3:00pm"
+    },
+    {
+      "title": "\n      School Days Off\n      ",
+      "date": "March 31",
+      "time": " 10:15am - 12:00pm"
+    },
+    {
+      "title": "\n      HRE Departmental Meeting\n      ",
+      "date": "March 31",
+      "time": " 10:30am - 12:00pm"
+    },
+    {
+      "title": "\n      CS Faculty Meetings\n      ",
+      "date": "March 31",
+      "time": " 12:00pm - 1:30pm"
+    }
+  ]
+}

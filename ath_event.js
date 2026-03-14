@@ -7,48 +7,39 @@ const fs = require('fs');
 axios.get('https://denverpioneers.com/')
     .then(response => {
         const $ = cheerio.load(response.data);
-        
+        let obj;
+
         // Step 1: Find the script tag containing event data
         let dataScript = null;
         $('script').each((i, script) => {
             const html = $(script).html();
             if (html && html.includes('"school_name":"University of Denver"') && html.includes('var obj = ')) {
-                console.log(html.indexOf('"'), html.indexOf(";"))
-                const obj = JSON.parse(JSON.stringify(html.slice(html.indexOf('{'),html.indexOf(';')-1)))
-                // dataScript = html;
-                obj.filter()
+                let jsonStr = html.slice(15,63697);
+                obj = JSON.parse(jsonStr);
+                console.log(typeof(obj))
             }
+
         });
 
         
+
+        if (!obj) {
+            console.log('Event data not found');
+            return;
+        }
+
+        const formatted = {'events': []};
+        obj.data.forEach(event => {
+            formatted.events.push({
+                duTeam: event.sport.title,
+                opponent: event.opponent.name,
+                date: event.date
+            });
+        });
+
+        fs.writeFileSync('results/athletic_events.json', JSON.stringify(formatted, null, 2));
+        console.log(`Saved ${formatted.events.length} events`);
         
-        // if (!dataScript) {
-        //     console.log('Event data not found');
-        //     return;
-        // }
-        
-        // // Step 2: Extract the JSON from "var obj = {...}"
-        // const jsonMatch = dataScript.match(/var obj = ({[\s\S]*?});/);
-        // if (!jsonMatch) {
-        //     console.log('Could not parse JSON');
-        //     return;
-        // }
-        
-        // // Step 3: Parse the JSON string into a JavaScript object
-        // const obj = JSON.parse(jsonMatch[1]);
-        
-        // // Step 4: Use the data
-        // const formatted = {'events': []};
-        // obj.data.forEach(event => {
-        //     formatted.events.push({
-        //         duTeam: event.sport,
-        //         opponent: event.opponent_id,
-        //         date: event.date
-        //     });
-        // });
-        
-        // fs.writeFileSync('results/athletic_events.json', JSON.stringify(formatted, null, 2));
-        // console.log(`Saved ${formatted.events.length} events`);
 
     })
     .catch(error =>
